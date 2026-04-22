@@ -19,3 +19,18 @@
   register: nextcloud_repair
   changed_when: >
     'already up to date' not in nextcloud_repair.stdout | lower
+
+- name: Définir le serverid Nextcloud
+  ansible.builtin.command:
+    argv:
+      - sudo
+      - -u
+      - www-data
+      - php
+      - "{{ nextcloud_web_root }}/occ"
+      - config:system:set
+      - serverid
+      - --type=integer
+      - --value={{ nextcloud_serverid | string }}
+  changed_when: false
+  when: "'installed: true' in nextcloud_status_postconfig.stdout"

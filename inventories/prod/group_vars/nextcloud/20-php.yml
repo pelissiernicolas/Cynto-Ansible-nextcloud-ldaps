@@ -6,3 +6,4 @@ php_upload_max_filesize: 16G
 php_post_max_size: 16G
 php_max_execution_time: 360
 php_opcache_interned_strings_buffer: 16
+nextcloud_serverid: 1
