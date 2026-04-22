@@ -1,0 +1,9 @@
+ad_ca_common_name: "CYNTO-ROOT-CA"
+ad_ca_dn_suffix: "DC=cynto,DC=tech"
+ad_ca_validity_years: 10
+
+ad_dc_fqdn: "srv-ad-01.cynto.tech"
+ad_dc_cert_template_name: "DomainControllerLDAPS"
+
+ad_ca_export_dir: 'C:\Temp\ca-export'
+ad_ca_cert_export_path: 'C:\Temp\ca-export\cynto-root-ca.cer'

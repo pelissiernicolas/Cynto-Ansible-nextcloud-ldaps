@@ -1,0 +1,10 @@
+- name: Récupérer le certificat racine de la CA
+  hosts: ad
+  gather_facts: no
+
+  tasks:
+    - name: Récupérer le certificat CA
+      fetch:
+        src: "{{ ad_ca_cert_export_path }}"
+        dest: "./artifacts/ad-ca/"
+        flat: yes

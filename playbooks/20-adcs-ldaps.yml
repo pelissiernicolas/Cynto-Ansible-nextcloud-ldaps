@@ -1,0 +1,5 @@
+- name: Installer AD CS et préparer LDAPS
+  hosts: ad
+  gather_facts: false
+  roles:
+    - adcs_ldaps

@@ -19,3 +19,4 @@ vault_pass*
 # Python cache (if local tooling is used)
 __pycache__/
 *.pyc
+cynto-root-ca.cer
