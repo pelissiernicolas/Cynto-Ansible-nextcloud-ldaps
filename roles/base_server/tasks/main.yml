@@ -26,3 +26,4 @@
   ansible.builtin.apt:
     update_cache: true
     upgrade: dist
+    lock_timeout: 300
