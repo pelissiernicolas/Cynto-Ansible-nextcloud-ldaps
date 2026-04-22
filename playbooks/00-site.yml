@@ -1,0 +1,10 @@
+- import_playbook: 01-base-server.yml
+- import_playbook: 02-nextcloud.yml
+- import_playbook: 03-https-internal.yml
+- import_playbook: 04-nextcloud-postconfig.yml
+- import_playbook: 05-nextcloud-php-tuning.yml
+- import_playbook: 06-nextcloud-appapi.yml
+- import_playbook: 07-nextcloud-appapi-harp.yml
+- import_playbook: 20-adcs-ldaps.yml
+- import_playbook: 21-fetch-ad-ca.yml
+- import_playbook: 22-nextcloud-ldaps.yml
