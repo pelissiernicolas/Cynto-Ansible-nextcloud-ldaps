@@ -1,0 +1,5 @@
+- name: Installation propre de Nextcloud
+  hosts: nextcloud
+  become: true
+  roles:
+    - nextcloud

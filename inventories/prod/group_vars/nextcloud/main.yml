@@ -1,0 +1,6 @@
+# Variables de ce groupe decoupees en fichiers thematiques:
+# - 00-server.yml
+# - 10-nextcloud.yml
+# - 20-php.yml
+# - 30-ssl.yml
+# - 40-appapi.yml

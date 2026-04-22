@@ -1,0 +1,22 @@
+nextcloud_ldap_config_id: s01
+
+ldap_host: "192.168.1.60"
+ldap_port: 389
+ldap_base_dn: "DC=cynto,DC=tech"
+ldap_user_base_dn: "OU=Utilisateurs,DC=cynto,DC=tech"
+ldap_group_base_dn: "OU=Groupes,DC=cynto,DC=tech"
+ldap_bind_dn: "svc_nextcloud@cynto.tech"
+
+ldap_login_filter: "(&(objectClass=user)(sAMAccountName=%uid))"
+ldap_user_filter: "(&(objectClass=user)(!(objectClass=computer)))"
+ldap_group_filter: "(objectClass=group)"
+
+ldap_display_name_attr: "displayName"
+ldap_email_attr: "mail"
+ldap_uuid_user_attr: "objectGUID"
+ldap_uuid_group_attr: "objectGUID"
+ldap_username_attr: "sAMAccountName"
+ldap_groupname_attr: "cn"
+
+ldap_turn_off_cert_check: "0"
+ldap_use_tls: "0"

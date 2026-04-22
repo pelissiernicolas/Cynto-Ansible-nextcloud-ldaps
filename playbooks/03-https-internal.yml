@@ -1,0 +1,5 @@
+- name: Activer HTTPS interne sur Nextcloud
+  hosts: nextcloud
+  become: true
+  roles:
+    - https_internal

@@ -1,0 +1,21 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Ansible runtime artifacts
+*.retry
+ansible.log
+vault.yml
+
+# Secrets and local credentials
+.vault_pass*
+vault_pass*
+*.vault
+
+# Python cache (if local tooling is used)
+__pycache__/
+*.pyc

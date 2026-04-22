@@ -1,0 +1,6 @@
+- name: Préparation du serveur Ubuntu
+  hosts: nextcloud
+  become: true
+  gather_facts: true
+  roles:
+    - base_server

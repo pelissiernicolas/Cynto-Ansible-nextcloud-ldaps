@@ -1,0 +1,5 @@
+- name: Activer AppAPI Deploy Daemon sur Nextcloud
+  hosts: nextcloud
+  become: true
+  roles:
+    - nextcloud_appapi_daemon

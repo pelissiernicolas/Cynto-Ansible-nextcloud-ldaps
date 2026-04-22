@@ -1,0 +1,5 @@
+- name: Installer et configurer LDAP sur Nextcloud
+  hosts: nextcloud
+  become: true
+  roles:
+    - nextcloud_ldap

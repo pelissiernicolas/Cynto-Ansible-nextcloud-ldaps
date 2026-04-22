@@ -1,0 +1,5 @@
+- name: Corriger les réglages PHP pour Nextcloud
+  hosts: nextcloud
+  become: true
+  roles:
+    - nextcloud_php_tuning
